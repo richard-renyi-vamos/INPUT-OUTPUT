@@ -1,0 +1,16 @@
+def get_user_input():
+    while True:
+        try:
+            user_input = int(input("Enter a number between 1 and 10: "))
+            if 1 <= user_input <= 10:
+                return user_input
+            else:
+                print("Invalid input. Please enter a number between 1 and 10.")
+        except ValueError:
+            print("Invalid input. Please enter a number between 1 and 10.")
+
+
+number = get_user_input()
+print("You entered:", number)
+
+# CREATED WITH THE HELP OF OPEN-AI CHAT GPT: https://chat.openai.com/chat
