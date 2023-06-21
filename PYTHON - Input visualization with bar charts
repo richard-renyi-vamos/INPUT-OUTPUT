@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+
+# Lists to store the inputs
+texts = []
+ratings = []
+
+# Ask for user inputs
+for i in range(5):
+    text = input("Enter text {}: ".format(i+1))
+    rating = float(input("Enter rating {}: ".format(i+1)))
+    texts.append(text)
+    ratings.append(rating)
+
+# Create bar chart
+plt.bar(texts, ratings)
+plt.xlabel('Text')
+plt.ylabel('Rating')
+plt.title('Rating Visualization')
+plt.show()
+
+# CREATED WITH THE HELP OF OPEN-AI CHAT GPT: https://chat.openai.com/chat
